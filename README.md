@@ -1,1 +1,1 @@
-# alu-shell
+# alu-shell repository monitoring bash
