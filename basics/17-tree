@@ -1,2 +1,2 @@
 #!/bin/bash
-mkir -p wecome/to/school
+mkdir -p wecome/to/school
