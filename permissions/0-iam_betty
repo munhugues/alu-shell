@@ -1,7 +1,2 @@
 #!/bin/bash
-user="betty"
-echo "The user is currently $user"
-echo "You  can change the user"
-echo "Enter the user name: "
-read user
-echo "The user is now $user"
+su betty
