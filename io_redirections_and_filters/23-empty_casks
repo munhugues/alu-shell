@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -tR |find . -empty -execdir 
+ls -tR |find . -empty  
