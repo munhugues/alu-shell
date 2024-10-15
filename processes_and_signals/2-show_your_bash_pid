@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display all processes for all users, including those without a TTY, in a user-oriented format, and show the process hierarchy
+# shellcheck disable=SC2009
+ps -faux |grep bash
