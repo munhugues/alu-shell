@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Create the /var/run/myscript.pid file containing the current process PID
+echo $$ > /var/run/myscript.pid
+
+
+# Trap SIGTERM and SIGQUIT signals to delete the PID file and exit
+trap ' echo "I hate the kill command"; exit' SIGTERM
+trap ' echo "Y U no love me?!"; exit' SIGINT
+trap ' echo "Cleaning up..."; exit' SIGQUIT  
+
+# Display 'To infinity and beyond' indefinitely
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
