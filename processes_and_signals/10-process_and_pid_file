@@ -4,9 +4,9 @@ echo $$ > /var/run/myscript.pid
 
 
 # Trap SIGTERM and SIGQUIT signals to delete the PID file and exit
-trap ' echo "I hate the kill command"; exit' SIGTERM
-trap ' echo "Y U no love me?!"; exit' SIGINT
-trap ' echo "Cleaning up..."; exit' SIGQUIT  
+trap ' rm /var/run/myscript.pid; echo "I hate the kill command"; exit' SIGTERM
+trap ' rm /var/run/myscript.pid; echo "Y U no love me?!"; exit' SIGINT
+trap ' rm /var/run/myscript.pid; echo "Cleaning up..."; exit' SIGQUIT  
 
 # Display 'To infinity and beyond' indefinitely
 while true
